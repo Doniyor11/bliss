@@ -1,0 +1,53 @@
+.main__container {
+  height: 100vh;
+  background-image: url("../../../images/dist/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .navbar-nav {
+    margin-left: auto;
+
+    .nav-item {
+      .nav-link {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+      }
+
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+
+    }
+
+    .dropdown {
+      margin-left: 25px;
+
+      .dropdown-menu {
+        min-width: 100%;
+        padding: 0;
+
+        .dropdown-item {
+          padding: 10px;
+
+          &:hover {
+            background: transparent;
+          }
+
+          &:active {
+            background: transparent;
+            color: #000;
+          }
+        }
+      }
+    }
+
+
+    .active{
+      color: #DC143C !important;
+    }
+  }
+}

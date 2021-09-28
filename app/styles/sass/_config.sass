@@ -1,0 +1,80 @@
+// USER VARIABLES SECTION
+
+$accent: orange
+// Accent Color
+$fontsize: 16px
+// Body Font Size
+$textcolor: #333
+// Text Color
+$blockTextSize: 36px
+$lineheight: 1.65
+// Document Line Height
+$userfont: 'Montserrat Alternates ExLight', sans-serif
+// User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif
+// System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+//@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+//@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+//@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/bootstrap'
+// Optional Bootstrap Grid
+@import "node_modules/slick-carousel/slick/slick.scss"
+@import "node_modules/slick-carousel/slick/slick-theme.scss"
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    src: url($furl) format('woff2')
+
+@include font('Montserrat Alternates ExLight', bold, 700, '../fonts/MontserratAlternates-Bold.woff')
+@include font('Montserrat Alternates ExLigh', normal, 400, '../fonts/MontserratAlternates-Regular.woff')
+@include font('Montserrat Alternates ExLigh', italic, 600, '../fonts/MontserratAlternates-SemiBold.woff')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+input, textarea
+  outline: none
+
+  &:focus:required:invalid
+    border-color: red
+
+  &:required:valid
+    border-color: green
+
+body
+  font-family: $userfont
+  font-size: $fontsize
+  line-height: $lineheight
+  color: $textcolor
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
+
+.title_block
+  font-size: $blockTextSize
+  font-weight: bold
+  line-height: 49px
+  color: #56CCF2
+  padding-top: 60px
+
+
+a:link
+  text-decoration: none

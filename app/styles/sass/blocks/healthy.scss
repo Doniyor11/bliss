@@ -1,0 +1,116 @@
+.healthy__container {
+  background-image: url("../../../images/dist/healthy-bg.png");
+  background-repeat: no-repeat;
+  background-position: 100% -65%;
+  padding-bottom: 155px;
+
+  .healthy__head {
+    margin-top: 130px;
+
+    .text__title {
+      background-size: cover;
+      background: url("../../../images/dist/helthy-bg.png");
+
+      h2 {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 55px;
+        margin: 0;
+        background: #fff;
+        text-align: center;
+        mix-blend-mode: lighten;
+      }
+    }
+  }
+
+
+  .healthy__row {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+    .left__row {
+      margin-right: 110px;
+
+      .items {
+        text-align: right;
+        width: 255px;
+        position: relative;
+
+        h4 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          margin: 0;
+          color: #000000;
+        }
+
+        p {
+          display: block;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: right;
+          margin: 5px 0 0 0;
+          color: #454545;
+        }
+
+        &:nth-child(2) {
+          top: 135px;
+        }
+
+        &:nth-child(1) {
+          top: -40px;
+        }
+
+        &:nth-child(3) {
+          top: -45px;
+        }
+
+
+      }
+
+    }
+
+    .right__row {
+      margin-left: 110px;
+
+      position: relative;
+
+      .items {
+        text-align: left;
+        width: 255px;
+        position: absolute;
+
+        h4 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          margin: 0;
+          color: #000000;
+        }
+
+        p {
+          display: block;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: left;
+          margin: 5px 0 0 0;
+          color: #454545;
+        }
+
+        &:nth-child(2) {
+          top: 100px;
+        }
+
+        &:nth-child(1) {
+          top: -20px;
+        }
+
+        &:nth-child(3) {
+          top: -135px;
+        }
+      }
+    }
+
+  }
+}
