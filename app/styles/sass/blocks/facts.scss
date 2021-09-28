@@ -7,8 +7,8 @@
   position: relative;
 
   .img__facts {
-    width: 300px;
-    height: 400px;
+    width: 245px;
+    height: 440px;
     position: absolute;
     bottom: -195px;
     left: 0;
@@ -35,6 +35,7 @@
 
   .facts__row {
     display: flex;
+    margin-top: 65px;
 
     .left {
       width: 50%;
@@ -43,7 +44,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 70px;
         border-bottom: 1px solid #F25C40;
         padding-bottom: 25px;
 
@@ -93,6 +93,9 @@
 
     .right {
       width: 50%;
+      display: flex;
+      padding-left: 50px;
+      justify-content: center;
     }
   }
 
