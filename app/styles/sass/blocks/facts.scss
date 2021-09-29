@@ -1,6 +1,6 @@
 .facts__container {
   background-color: #FFE284;
-  height: 623px;
+  height: 620px;
   background-image: url("../../../images/dist/facts-bg.png");
   background-repeat: no-repeat;
   background-position: 10% top;
@@ -14,10 +14,10 @@
     left: 0;
   }
 
-  .img__facts-bottom{
+  .img__facts-bottom {
     position: absolute;
     bottom: 0;
-    left: 280px;
+    left: 190px;
     right: 0;
   }
 
@@ -76,6 +76,10 @@
             height: 45px;
             border: 1px solid #F25C40;
             border-radius: 50%;
+
+            img {
+              width: 30px;
+            }
           }
         }
 
@@ -83,6 +87,7 @@
 
       .left__desc {
         margin-top: 32px;
+
         p {
           margin: 0;
           font-size: 16px;
@@ -90,6 +95,53 @@
           color: #101010;
         }
       }
+
+      .left__item {
+        display: flex;
+        margin-top: 45px;
+        position: absolute;
+        z-index: 1;
+
+        .items__first {
+          width: 167px;
+          height: 40px;
+          background-image: url("../../../images/dist/facts-item1.png") !important;
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 0;
+            color: #F25C40;
+          }
+        }
+
+        .items {
+          width: 167px;
+          height: 40px;
+          background-image: url("../../../images/dist/facts-item.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 0;
+            color: #F25C40;
+          }
+        }
+      }
+
+
     }
 
     .right {
@@ -97,6 +149,22 @@
       display: flex;
       padding-left: 50px;
       justify-content: center;
+      position: relative;
+
+      img {
+        position: absolute;
+        z-index: 1;
+      }
+
+      .img__fact-small {
+        position: absolute;
+        bottom: 115px;
+        right: 205px;
+
+        img {
+
+        }
+      }
     }
   }
 

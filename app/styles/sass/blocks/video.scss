@@ -1,0 +1,36 @@
+.video__container {
+  padding: 90px 0 90px 0;
+
+  .video__title {
+    .text__title {
+      background-size: cover;
+      background: url("../../../images/dist/helthy-bg.png");
+
+      h2 {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 55px;
+        margin: 0;
+        background: #fff;
+        text-align: center;
+        mix-blend-mode: lighten;
+      }
+    }
+  }
+
+  .video__play {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
+
+    .video__play-small {
+      position: absolute;
+      bottom: -170px;
+      right: -135px;
+      width: 700px;
+
+    }
+  }
+
+}
