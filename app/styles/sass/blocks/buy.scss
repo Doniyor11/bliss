@@ -1,0 +1,66 @@
+.buy__container {
+  background-image: url("../../../images/dist/map__list.png");
+  background-repeat: no-repeat;
+  background-position: -1% 307%;
+
+  .buy__title {
+    margin-top: 100px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 55px;
+      color: #F25C40;
+      margin: 0 0 55px 0;
+      text-align: center;
+    }
+  }
+
+  .buy__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+
+    button {
+      padding: 15px 60px;
+      border: 1px solid #F25C40;
+      background-color: transparent;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 26px;
+      color: #F25C40;
+
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+
+      &:hover {
+        background: #F25C40;
+        color: #fff;
+      }
+    }
+  }
+
+  .buy__map {
+    border: 5px solid #F25C40;
+    position: relative;
+
+    .buy__map-box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 25px 50px;
+      background-color: #F25C40;
+
+      p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+}

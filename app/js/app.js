@@ -19,8 +19,18 @@ $('.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:false
-
 });
+
+// reviews__slider
+
+$('.reviews__slider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows:false,
+});
+
 // Custom JS
 $('a[href*="#"]')
     // Remove links that don't actually link to anything

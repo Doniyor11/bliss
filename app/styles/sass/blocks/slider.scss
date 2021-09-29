@@ -58,10 +58,16 @@
         color: #FFFFFF;
         padding: 17px 35px;
         margin-top: 55px;
+        transition: all .5s ease-in;
+        border-bottom: 5px solid transparent;
 
         img {
           margin-left: 30px;
           display: inline-block;
+        }
+
+        &:hover{
+          border-bottom: 5px solid #A93B3B;
         }
       }
 
