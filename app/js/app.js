@@ -18,7 +18,9 @@ $('.slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:false
+    arrows: true,
+    prevArrow: ".prev",
+    nextArrow: ".next",
 });
 
 // reviews__slider
@@ -28,7 +30,7 @@ $('.reviews__slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows:false,
+    arrows: false,
 });
 
 // Custom JS
