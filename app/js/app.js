@@ -21,6 +21,7 @@ $('.slider').slick({
     arrows: true,
     prevArrow: ".prev",
     nextArrow: ".next",
+    dots: true
 });
 
 // reviews__slider
