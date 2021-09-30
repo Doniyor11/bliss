@@ -46,6 +46,18 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
+const swiper3 = new Swiper('.wrapper__left-slider', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    nextButton: '.next__swiper',
+    prevButton: '.prev__swiper',
+    navigation: {
+        nextEl: '.left__next-new',
+        prevEl: '.left__btn-new',
+    },
+});
+
 const swiper2 = new Swiper('.facts__swiper', {
     // Optional parameters
     loop: true,

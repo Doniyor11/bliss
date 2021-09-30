@@ -20,6 +20,7 @@
       .left__btn-top {
         padding: 90px 0 0 110px;
         position: relative;
+        z-index: 999;
 
         button {
           background-color: transparent;
@@ -40,15 +41,6 @@
 
       }
 
-      .wrapper__left-img {
-        position: relative;
-
-        img {
-          position: absolute;
-          top: -114px;
-          width: 980px;
-        }
-      }
 
     }
 
