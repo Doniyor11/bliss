@@ -151,7 +151,6 @@
 
         li {
           height: 20px;
-          border-right: 2px solid #fff;
           padding-right: 10px;
 
           a {
@@ -163,6 +162,7 @@
 
           &:not(:last-child) {
             margin-right: 10px;
+            border-right: 2px solid #fff;
           }
         }
       }

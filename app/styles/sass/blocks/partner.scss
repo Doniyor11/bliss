@@ -1,13 +1,13 @@
 .partner__container {
-  margin: 140px 0 175px 0;
-  background-image: url("../../../images/dist/partner__bg.png");
+  padding: 140px 0 175px 0;
+  background-image: url("/images/dist/partner__bg.png");
   background-repeat: no-repeat;
   background-position: 100% 125px;
 
   .partner__title {
     .title {
       background-size: cover;
-      background: url(../../../images/dist/helthy-bg.png);
+      background: url("../images/dist/helthy-bg.png");
 
       h2 {
         font-weight: 700;

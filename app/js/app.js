@@ -1,6 +1,7 @@
 // // Import jQuery module (npm i jquery)
-// import 'bootstrap/dist/js/bootstrap.bundle.min';
-// import 'swiper/swiper-bundle.min'
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Swiper from 'swiper/bundle';
+import 'swiper/swiper-bundle.min'
 import 'slick-carousel/slick/slick.min'
 import $ from 'jquery'
 
@@ -14,15 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-$('.slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: ".prev",
-    nextArrow: ".next",
-    dots: true
-});
 
 // reviews__slider
 
@@ -33,44 +25,38 @@ $('.reviews__slider').slick({
     slidesToScroll: 1,
     arrows: false,
 });
+$('.facts__slider').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+});
 
-// Custom JS
-$('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function (event) {
-        // On-page links
-        if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-            &&
-            location.hostname == this.hostname
-        ) {
-            // Figure out element to scroll to
-            let target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function () {
-                    // Callback after animation
-                    // Must change focus!
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    }
-                    ;
-                });
-            }
-        }
-    });
+
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    nextButton: '.next__swiper',
+    prevButton: '.prev__swiper',
+    navigation: {
+        nextEl: '.next__swiper',
+        prevEl: '.prev__swiper',
+    },
+});
+
+const swiper2 = new Swiper('.facts__swiper', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    nextButton: '.next__swiper',
+    prevButton: '.prev__swiper',
+    navigation: {
+        nextEl: '.btn__facts-next',
+        prevEl: '.btn__facts-prev',
+    },
+});
 
 
 //mobile menu
