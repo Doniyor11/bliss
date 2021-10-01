@@ -24,7 +24,32 @@ $('.reviews__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+
 });
+
 $('.facts__slider').slick({
     dots: false,
     infinite: true,
@@ -34,7 +59,7 @@ $('.facts__slider').slick({
 });
 
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.header__slider', {
     // Optional parameters
     loop: true,
     slidesPerView: 1,
@@ -43,6 +68,21 @@ const swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.next__swiper',
         prevEl: '.prev__swiper',
+    },
+    autoplay: {
+        delay: 3000
+    },
+    breakpoints: {
+        768: {
+            autoplay: {
+                delay: 3000
+            }
+        },
+        576: {
+            autoplay: {
+                delay: 3000
+            }
+        }
     },
 });
 
