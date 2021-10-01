@@ -4,7 +4,7 @@
   .video__title {
     .text__title {
       background-size: cover;
-      background: url("../../../images/dist/helthy-bg.png");
+      background: url("../images/dist/helthy-bg.png");
 
       h2 {
         font-weight: bold;
@@ -24,6 +24,21 @@
     margin-top: 60px;
     position: relative;
 
+    .video__play-btn {
+      position: absolute;
+      top: 40%;
+
+      button {
+        border: none;
+        width: 85px;
+        height: 85px;
+        background: #E76363;
+        border-radius: 50%;
+        animation: pulse-animation 2s infinite;
+
+      }
+    }
+
     .video__play-small {
       position: absolute;
       bottom: -170px;
@@ -33,4 +48,12 @@
     }
   }
 
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
 }

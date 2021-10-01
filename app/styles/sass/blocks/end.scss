@@ -1,0 +1,142 @@
+.end__container {
+  .end__logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 85px 0;
+    border-bottom: 1px solid #CDCDCD;
+
+    .end__items {
+      display: flex;
+
+      .logo {
+        margin-right: 40px;
+      }
+
+      .text {
+        p {
+          width: 340px;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0;
+          color: #000000;
+        }
+      }
+    }
+
+    .end__phone {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .title {
+          position: relative;
+
+          p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 134.9%;
+            margin: 0 0 10px 0;
+            color: #000000;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 0;
+            left: -50px;
+            background-image: url("../images/dist/phone-call.svg");
+          }
+        }
+
+        .phone {
+          margin-bottom: 18px;
+
+          a {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 134.9%;
+            color: #000000;
+          }
+        }
+
+        .socila {
+          display: flex;
+
+          a {
+            display: block;
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+
+    .end__mail {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .title {
+          position: relative;
+
+          p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 134.9%;
+            margin: 0 0 10px 0;
+            color: #000000;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 15px;
+            top: 0;
+            left: -50px;
+            background-image: url("../../../images/dist/email.svg");
+          }
+        }
+
+        .phone {
+          margin-bottom: 18px;
+
+          a {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 134.9%;
+            color: #000000;
+          }
+        }
+
+        .socila {
+          display: flex;
+
+          span {
+            display: block;
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .end__menu {
+    list-style: none;
+    margin: 0;
+    padding: 30px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      a {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+      }
+    }
+  }
+}

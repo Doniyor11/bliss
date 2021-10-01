@@ -1,0 +1,118 @@
+.reviews__container {
+  position: relative;
+  padding: 60px 0 60px 0;
+  background-color: #FFE284;
+  background-image: url("../images/dist/reviews--bg.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20%;
+
+  .img__freviews {
+    position: absolute;
+    right: 0;
+    bottom: -175px;
+  }
+
+  .reviews__title {
+    h2 {
+      font-weight: bold;
+      font-size: 43.2px;
+      line-height: 53px;
+      margin: 0;
+      color: #F25C40;
+      text-align: center;
+    }
+  }
+
+  .reviews__slider {
+    display: flex !important;
+    margin-top: 80px;
+
+    .reviews__box {
+      background: #FFFFFF;
+      border: 1px solid #D7D7D7;
+      border-radius: 8px;
+      padding: 35px 45px 30px 35px;
+
+      .reviews__box-head {
+        display: flex;
+
+        .head__img {
+          width: 105px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 45px;
+        }
+
+        .head__text {
+          h3 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0 0 5px 0;
+            color: #F25C40;
+          }
+
+          span {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #A4A4A4;
+          }
+        }
+
+      }
+
+      .reviews__box-body {
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          margin: 0;
+          color: #A4A4A4;
+        }
+
+        span {
+          display: block;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          color: #F25C40;
+          text-align: right;
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .slick-slide {
+      margin: 0 40px 0 0 !important;
+    }
+
+    .slick-dots {
+      bottom: -50px;
+      list-style-type: none;
+
+      .slick-active {
+        width: 22px;
+        height: 10px;
+        background: #F25C40;
+        border-radius: 5px;
+      }
+
+
+      li {
+        width: 10px;
+        height: 10px;
+        border: none;
+        border-radius: 50%;
+        font-size: 0;
+        background: rgba(242, 92, 64, 0.45);
+
+        button {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+}

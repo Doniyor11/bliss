@@ -1,0 +1,76 @@
+.complaints__container {
+  position: relative;
+  background: #FFDD84;
+
+  .img__complaints {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .img__complaints-right {
+    position: absolute;
+    top: 0;
+    right: -55px;
+  }
+
+  .complaints__title {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      background-size: cover;
+      background: url("/images/dist/helthy-bg.png");
+
+      h2 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        margin: 0;
+        background: #ffdd84;
+        text-align: center;
+        mix-blend-mode: lighten;
+      }
+    }
+
+    p {
+      width: 395px;
+      margin: 25px 0 0 0;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+
+  .complaints__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 60px;
+
+    a {
+      display: block;
+      padding: 18px 30px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      background: #E76363;
+      border-radius: 25px;
+      color: #FFFFFF;
+      transition: all .2s ease-in;
+      border-bottom: 5px solid transparent;
+
+      img {
+        margin-left: 14px;
+      }
+      &:hover{
+        border-bottom: 5px solid #A93B3B;
+      }
+    }
+  }
+
+}

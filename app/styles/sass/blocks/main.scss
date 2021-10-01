@@ -20,6 +20,7 @@
       .left__btn-top {
         padding: 90px 0 0 110px;
         position: relative;
+        z-index: 999;
 
         button {
           background-color: transparent;
@@ -40,15 +41,6 @@
 
       }
 
-      .wrapper__left-img {
-        position: relative;
-
-        img {
-          position: absolute;
-          top: -114px;
-          width: 980px;
-        }
-      }
 
     }
 
@@ -57,7 +49,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-image: url("../../../images/dist/mango.png");
+      background-image: url("../images/dist/mango.png");
       background-repeat: no-repeat;
       background-position: right center;
       padding-left: 80px;
@@ -97,9 +89,15 @@
         color: #FFFFFF;
         padding: 15px 20px;
         margin-top: 50px;
+        transition: all .2s ease-in;
+        border-bottom: 5px solid transparent;
 
         img {
           margin-left: 20px;
+        }
+
+        &:hover {
+          border-bottom: 5px solid #A93B3B;
         }
       }
     }
@@ -145,7 +143,6 @@
 
         li {
           height: 20px;
-          border-right: 2px solid #fff;
           padding-right: 10px;
 
           a {
@@ -154,8 +151,10 @@
             line-height: 22px;
             color: #FFFFFF;
           }
-          &:not(:last-child){
+
+          &:not(:last-child) {
             margin-right: 10px;
+            border-right: 2px solid #fff;
           }
         }
       }

@@ -1,15 +1,15 @@
 .healthy__container {
-  background-image: url("../../../images/dist/healthy-bg.png");
+  background-image: url("../images/dist/healthy-bg.png");
   background-repeat: no-repeat;
   background-position: 100% -65%;
   padding-bottom: 155px;
 
   .healthy__head {
-    margin-top: 130px;
+   padding-top: 130px;
 
     .text__title {
       background-size: cover;
-      background: url("../../../images/dist/helthy-bg.png");
+      background: url("../images/dist/helthy-bg.png");
 
       h2 {
         font-weight: bold;
@@ -55,15 +55,15 @@
         }
 
         &:nth-child(2) {
-          top: 135px;
+          top: 110px;
         }
 
         &:nth-child(1) {
-          top: -40px;
+          top: -100px;
         }
 
         &:nth-child(3) {
-          top: -45px;
+          top: -33px;
         }
 
 
