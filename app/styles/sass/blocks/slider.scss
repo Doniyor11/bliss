@@ -7,7 +7,7 @@
     .slick__slider {
       display: flex !important;
       align-items: center;
-      height: 710px;
+      height: 665px;
 
       .slider__left {
         width: 50%;
@@ -138,5 +138,56 @@
   .btn__large {
     width: 67px !important;
     height: 67px !important;
+  }
+
+  .arrow__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .arrow__img {
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      animation: down 3.5s infinite;
+    }
+
+    .btn__more {
+      display: none;
+    }
+
+    .slider__left-btn {
+      display: inline-block;
+      background: #E76363;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+      padding: 17px 35px;
+      transition: all .2s ease-in;
+      border-bottom: 5px solid transparent;
+
+      img {
+        margin-left: 30px;
+        display: inline-block;
+      }
+
+      &:hover {
+        border-bottom: 5px solid #A93B3B;
+      }
+    }
+  }
+  @-webkit-keyframes down {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
   }
 }

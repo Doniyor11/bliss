@@ -144,6 +144,7 @@
     left: 535px;
     top: 8px;
     z-index: 1;
+    display: flex;
 
     .btn__facts-prev {
       img {
@@ -159,6 +160,9 @@
       height: 45px;
       border: 1px solid #F25C40;
       border-radius: 50%;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
 
       img {
         width: 30px;
