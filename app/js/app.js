@@ -154,6 +154,7 @@ const swiper3 = new Swiper('.wrapper__left-slider', {
     // Optional parameters
     loop: true,
     slidesPerView: 1,
+    autoHeight: true,
     nextButton: '.next__swiper',
     prevButton: '.prev__swiper',
     navigation: {
